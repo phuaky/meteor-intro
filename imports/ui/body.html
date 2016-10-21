@@ -1,0 +1,52 @@
+<body>
+  <div class="ui inverted  menu">
+    <a class="active item">
+      Home
+    </a>
+
+    <div class="right menu">
+      <div class="item">
+        <div class="ui icon input">
+          <input type="text" placeholder="Search...">
+          <i class="search link icon"></i>
+        </div>
+      </div>
+      <a class="ui item">
+        <div class="ui compact inverted menu">
+          <div class="ui simple dropdown item">
+            {{> atNavButton}}
+            <div class="menu">
+              {{> atForm}}
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="ui centered sixteen column grid">
+    <header>
+      <h1>Blog</h1>
+      {{#if currentUser}}
+      <div class="ui card">
+        <div class="content">
+          <div class="description">
+            <form class="ui form new-post">
+              <div class="field">
+                <label>Blog FORM</label>
+                <textarea placeholder="Add post here" name ="text"></textarea>
+              </div>
+              <button class="ui button" type="submit">Publish</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      {{/if}}
+    </header>
+  </div>
+
+  {{#each posts}}
+    {{> post}}
+  {{/each}}
+
+</body>

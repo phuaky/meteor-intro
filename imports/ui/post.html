@@ -1,0 +1,32 @@
+<template name="post">
+    <div class="ui centered card">
+      <div class="content">
+        <i class="right floated remove circle icon delete"></i>
+        <i class="right floated edit icon show-edit-form"></i>
+        <div class="header">Cute Dog</div>
+        <div class="description">
+          <p>
+
+            {{#if editMode}}
+            <form class="ui form update">
+              <textarea name="text" value="{{text}}"></textarea>
+              <button class="ui button update" type="submit">Update</button>
+            </form>
+            {{else}}
+            <div class="visible">
+              <span class="text">{{text}}</span>
+            </div>
+            {{/if}}
+          </p>
+        </div>
+      </div>
+      <div class="extra content">
+        <span class="text"><strong>{{username}}</strong></span>
+
+        <span class="right floated star">
+          <i class="star icon"></i>
+          Favorite
+        </span>
+      </div>
+    </div>
+</template>
