@@ -234,6 +234,7 @@ In imports/ui/post.html,
 
 
 An explanation of the various meteor folders and what they do
+~~~
 imports/
  startup/
    client/
@@ -265,62 +266,4 @@ client/
 
 server/
  main.js                      # server entry point, imports all server code
-
-
-
-
-
-Talk about meteortoys - what it does, how to get it
-
-
-
-//hot code push. pages automatically update new content without refreshing - may take some time though
-//related to that, database changes are updated without refresh (e.g., additions to todo list)
-//var versus let versus const
-
-//reactive-dict (to store temporary reactive state on the client. A ReactiveDict is like a normal JS object with keys and values, but with built-in reactivity.)
-//meteor add accounts-ui accounts-password (to use meteor's inbuilt user authentication)
-//meteor remove insecure (by default meteor is in insecure mode where users can make edits to database from client side. When launching the product, needs to remove this option)
-//IMPORTANT. Meteor has multiple files with the same name in different folders. Need to be mindful of actual file being worked on
-
-	MongoDB - to monitor Mongo
-meteortoys:allthings            # enables us some mongo view tools
-mongoDB compass - app like psequel
-
-
-
-NOTES
-//NOTES BELOW
-- Start up for meteor seems to be quite slow
-- Installing took a while
-- Creating a new meteor project takes longer than Rails or Node (as in processing time after entering instructions)
-- Tried following the tutorial but could not find folder import so I created files and folders
-- Import folder needs to be called by calling import - much like require
-- Similar to partials, Meteor has templates that can be called e.g., {{> hello}} (calls the template hello).
-- Templates can be defined elsewhere and called
-- In javascript, templates can be called with Template.templateName.
-- The <body> is a special template and can be called in js with Template.body
-
-
-
-
-
-
-NOT INCLUDED IN GITBOOK
-
-
-QUESTIONS
-//QUESTIONS
--does order of code matter? Not for templates and defining of templates
-- By default, Meteor uses MongoDB - yes.
-- What is a collection? - it is the mongo equivalent of a sql table
-- What is Spacebars statement? - it is the special syntax that converts meteor script into html (think erb, ejs syntax)
-
-
-TO DO (in future)
-- Investigate accounts-facebook for facebook authentication
-- What is optimistic UI? Investigate optimistic UI (https://www.meteor.com/tutorials/blaze/security-with-methods)
-
-
-Presentation Timeline
-1.30pm - 1.35pm:
+~~~
