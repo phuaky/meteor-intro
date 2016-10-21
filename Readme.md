@@ -1,11 +1,11 @@
 Today's schedule (By Orders of Her Majesty Yvonne)
 
-1:30 -- Introduction
-1:40 -- Demo
-1:55 -- Meteor Setup Walkthrough
-2:05 -- Code Along
-4:00 -- Demo model solution
-4:15 -- Q & A
+1:30 -- Introduction  
+1:40 -- Demo  
+1:55 -- Meteor Setup Walkthrough  
+2:05 -- Code Along  
+4:00 -- Demo model solution  
+4:15 -- Q & A  
 
 ### What is Meteor
 
