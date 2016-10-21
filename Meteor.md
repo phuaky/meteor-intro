@@ -24,7 +24,7 @@ Meteor is a robust and full-stack JavaScript platform for developing real-time w
 ### Prerequisites
 Meteor is JavaScript framework so you need to have basic knowledge of JavaScript and HTML. You will also need to be familiar with NodeJS and MongoDB, although you will be able to understand everything without previous knowledge. If you never used mongoDB, any knowledge about databases should suffice. Since Meteor is full-stack framework, any previous experience in creating web or mobile apps will be helpful.
 
-### Sites built with meteor 
+### Sites built with meteor
 - partner.microsoft.com
 - codefights.com --> Codewars, Codility clone
 - rocket.chat --> Chat app (edited)
@@ -32,7 +32,7 @@ Meteor is JavaScript framework so you need to have basic knowledge of JavaScript
 ## SETUP ##
 
 1. Download Meteor
-type in terminal: 
+type in terminal:
 ~~~
 curl https://install.meteor.com/ | sh
 ~~~
@@ -53,7 +53,7 @@ After running meteor, localhost:3000// will be running automatically
 
 ## PACKAGES
 
-Copy and paste the following into .meteor/packages 
+Copy and paste the following into .meteor/packages
 ~~~
 raix:handlebar-helpers          		# allows us to accept the session in $
 aldeed:collection2              		# needed for autoform
@@ -90,7 +90,7 @@ import { Mongo } from 'meteor/mongo';
 export const Posts = new Mongo.Collection('posts');
 ~~~
 
-## Create form 
+## Create form
 body.html
 ~~~html
 <body>
@@ -118,7 +118,7 @@ Template.body.events({
     // Get value from form element
     const target = event.target;
     const text = target.text.value;
-    
+
     // Insert a task into the collection
     Posts.insert({
       text,
@@ -127,8 +127,8 @@ Template.body.events({
     });
 
     // Clear form
-    target.text.value = ‘';
-  }, 
+    target.text.value = '';
+  },
 });
 ~~~
 
@@ -209,14 +209,14 @@ import '../imports/startup/accounts-config.js';
 
 To show which user created each task
 
-In imports/ui/body.js, 
+In imports/ui/body.js,
 Add at the top: import { Meteor } from 'meteor/meteor';
 Within 	Posts.insert({:
 		     owner: Meteor.userId(),
      username: Meteor.user().username,
 
 
-In imports/ui/post.html, 
+In imports/ui/post.html,
 	Replace   <span class="text">{{text}}</span>
 	With	<span class="text"><strong>{{username}}</strong> - {{text}}</span>
 
@@ -273,7 +273,7 @@ Talk about meteortoys - what it does, how to get it
 //meteor add accounts-ui accounts-password (to use meteor's inbuilt user authentication)
 //meteor remove insecure (by default meteor is in insecure mode where users can make edits to database from client side. When launching the product, needs to remove this option)
 //IMPORTANT. Meteor has multiple files with the same name in different folders. Need to be mindful of actual file being worked on
-	
+
 	MongoDB - to monitor Mongo
 meteortoys:allthings            # enables us some mongo view tools
 mongoDB compass - app like psequel
@@ -303,7 +303,7 @@ NOT INCLUDED IN GITBOOK
 QUESTIONS
 //QUESTIONS
 -does order of code matter? Not for templates and defining of templates
-- By default, Meteor uses MongoDB - yes. 
+- By default, Meteor uses MongoDB - yes.
 - What is a collection? - it is the mongo equivalent of a sql table
 - What is Spacebars statement? - it is the special syntax that converts meteor script into html (think erb, ejs syntax)
 
@@ -313,11 +313,5 @@ TO DO (in future)
 - What is optimistic UI? Investigate optimistic UI (https://www.meteor.com/tutorials/blaze/security-with-methods)
 
 
-Presentation Timeline 
-1.30pm - 1.35pm: 
-
-
-
-
-
-
+Presentation Timeline
+1.30pm - 1.35pm:
