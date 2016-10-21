@@ -1,3 +1,12 @@
+Today's schedule (By Orders of Her Majesty Yvonne)
+
+1:30 -- Introduction
+1:40 -- Demo
+1:55 -- Meteor Setup Walkthrough
+2:05 -- Code Along
+4:00 -- Demo model solution
+4:15 -- Q & A
+
 ### What is Meteor
 
 Meteor is a robust and full-stack JavaScript platform for developing real-time web and mobile applications. It makes it easier to create real time apps since Meteor alone offers full ecosystem to work with instead of combining couple of different tools and framework to get the same effect.
